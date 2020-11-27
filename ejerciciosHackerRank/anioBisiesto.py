@@ -20,7 +20,17 @@ def suma(n):
     
 suma(5)
 
-_, a = (input(), set(input.split()))
-_, b = (input(), set(input.split()))
+a = {1,2,3,4,5,6,7,8,9}
+b = {10,1,2,3,11,21,55,6,8}
+# for x in range(1,4):
+x = len(a-b)
+print(x)
+set_1 = set(map(int,input().split()))
+o, e = [set(a,b) for i in range(4)][1::2]
+print(len(o.difference(e)))
+
+_, a = (input(), set(input().split()))
+_, b = (input(), set(input().split()))
 
 print(len(a.difference(b)))
+print(len(a.symmetric_difference(b)))
