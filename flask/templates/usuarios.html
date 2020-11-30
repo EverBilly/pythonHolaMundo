@@ -1,0 +1,10 @@
+<h1>Usuarios</h1>
+<ul>
+    {% for usuario in usuarios %}
+        <li>
+            <!-- {{ usuario[0] }}
+            {{ usuario[1] }} -->
+            {{ usuario.nombre }}
+        </li>
+    {% endfor %}
+</ul>
