@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}Registro{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <input type="text" name="username" id="username" placeholder="Ingrese se Username" required>
+        <input type="password" name="password" id="password" placeholder="Ingrese su Password" required>
+        <input type="submit" value="Registrarse">
+    </form>
+{% endblock %}
